@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "blockId": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-BlockId",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Identifier for the block being assessed.Usually recorded as a block number or code used by the farm"
+        },
+        "blockType": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-BlockType",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "It can be a Field or Paddock. Refer to Plot Type in Farm Features and Attributes standard. http://www.farmdatastandards.org.nz/"
+        },
+        "blockName": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-BlockName",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "The name used to refer to the block within the farm."
+        },
+        "blockTotalArea": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-BlockTotalArea",
+            "@type": "xsd:decimal",
+            "type": "number",
+            "dldescription": "Total block area in m2"
+        },
+        "identifiers": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-PaddockIdentifier",
+            "@type": "xsd:string",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "@container": "@set",
+            "dldescription": "Identifier for the paddock being assessed.Usually recorded as the paddock number on farm"
+        },
+        "name": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-PaddockName",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "The name used to refer to the paddock within the farm."
+        },
+        "totalArea": {
+            "@id": "https://www.datalinker.org/context/PastureCoversPaddock-TotalArea",
+            "@type": "xsd:decimal",
+            "type": "number",
+            "dldescription": "Total paddock area in m2"
+        }
+    }
+}

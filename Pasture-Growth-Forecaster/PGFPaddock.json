@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "identifier": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-Identifier",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Identifier for the paddock being assessed, usually recorded as the paddock number on farm."
+        },
+        "name": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-Name",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Paddock Name"
+        },
+        "isIrrigated": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-IsIrrigated",
+            "@type": "xsd:boolean",
+            "type": "boolean",
+            "dldescription": "This value is true when the user want to add irrigation in the paddock. By default, it is false."
+        },
+        "pastureType": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-PastureType",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "White clover/Ryegrass"
+        },
+        "shortForecast": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-ShortForecast",
+            "@type": "@id",
+            "type": "string",
+            "format": "uri",
+            "dltype": "http://www.datalinker.org/context/PGFShort",
+            "dldescription": "URL to access short forecast for the location"
+        },
+        "longTermForecast": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-LongTermForecast",
+            "@type": "@id",
+            "type": "string",
+            "format": "uri",
+            "dltype": "http://www.datalinker.org/context/PGFLongTerm",
+            "dldescription": "URL to access long term forecast for the location"
+        },
+        "threeMonthForecast": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-ThreeMonthForecast",
+            "@type": "@id",
+            "type": "string",
+            "format": "uri",
+            "dltype": "http://www.datalinker.org/context/PGFThreeMonth",
+            "dldescription": "URL to access three month forecast for the location"
+        },
+        "dynamicPeriodForecast":{
+            "@id": "https://www.datalinker.org/context/PGFPaddock-DynamicPeriodForecast",
+            "@type": "xsd:string",
+            "type": "string",
+            "format": "uri",
+            "dldescription": "URL to access the dynamic period forecast for the location"
+        },
+        "events": {
+            "@id": "http://www.datalinker.org/context/PGFPaddock-Events",
+            "@type": "@id",
+            "type": "string",
+            "format": "uri",
+            "dltype": "http://www.datalinker.org/context/PGFEvent",
+            "dldescription": "URL for list of events for the paddock"
+        }
+    }
+}

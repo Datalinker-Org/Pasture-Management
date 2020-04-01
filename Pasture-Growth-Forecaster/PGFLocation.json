@@ -1,159 +1,159 @@
 {
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "type": "object",
-    "properties": {
-        "locations": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Locations",
-            "@type": "xsd:string",
-            "type": "string",
-            "@set": "@array",
-            "dldescription": "Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier."
-        },
-        "identifier": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Identifier",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "A code used by the source system to identify the farm, such as an internally meaningful identifier"
-        },
-        "reference": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Reference",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "A unique name (up to 200 characters) supplied when the location was created"
-        },
-        "name": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Name",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "Location Name"
-        },
-        "geo": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Geo",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "The geo coordinates of the place."
-        },
-        "type": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Type",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "Currently on Farm"
-        },
-        "pastureType": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-PastureType",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "White clover/Ryegrass, Lucerne, Browntop, Lucerne / grass mix, Unimproved/tussock grasslands, Grass only, Summer C4 (paspalum) pastures, Irrigated pastures, C4 (Kikuyu) pastures, Clover Chicory, Plantain / clover"
-        },
-        "fertilityType": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-FertilityType",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "Dairy, Sheep and Beef - High, Sheep and Beef - Medium, Sheep and Beef - Low"
-        },
-        "pawType": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-PawType",
-            "@type": "xsd:string",
-            "type": "string",
-            "dldescription": "Profile Available Water - High, ModerateHigh,Average, ModeratePoor, Poor"
-        },
-        "paw": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Paw",
-            "@type": "xsd:number",
-            "type": "integer",
-            "dldescription": "Indicates the measure of Profile Available Water"
-        },
-        "isLearning": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-IsLearning",
-            "@type": "xsd:boolean",
-            "type": "boolean",
-            "dldescription": "This value is true when there is sufficient data for learning to be used, otherwise false. "
-        },
-        "isActive": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-IsActive",
-            "@type": "xsd:boolean",
-            "type": "boolean",
-            "dldescription": "Initially true meaning active, you may set this to false with PUT if you no longer wish to use this location (takes effect from the end of the billing cycle). "
-        },
-        "isIrrigated": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-IsIrrigated",
-            "@type": "xsd:boolean",
-            "type": "boolean",
-            "dldescription": "This value is true when the user want to add irrigation in the location. By default, it is false."
-        },
-        "isCalirrigatedFinished": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-IsCalirrigatedFinished",
-            "@type": "xsd:boolean",
-            "type": "boolean",
-            "dldescription": "True meaning finishing calculation on fly after applying irrigation. False means the calculation is still in process."
-        },
-        "dateCreated": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-DateCreated",
-            "@type": "xsd:date",
-            "type": "string",
-            "dldescription": "System maintained, this field shows the date and time the location was created (local to the server)."
-        },
-        "dateDeactivated": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-DateDeactivated",
-            "@type": "xsd:date",
-            "type": "string",
-            "dldescription": "System maintained, this field shows the date and time the location was deactivated (is-active set to false)."
-        },
-        "shortForecast": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-ShortForecast",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFShort",
-            "dldescription": "URL to access short forecast for the location"
-        },
-        "yearForecast": {
-            "@id": "http://www.datalinker.org/contexts/PGFLocation-YearForecast",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFYear",
-            "dldescription": "URL to access year forecast for the location"
-        },
-        "longTermForecast": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-LongTermForecast",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFLongTerm",
-            "dldescription": "URL to access long term forecast for the location"
-        },
-        "threeMonthForecast": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-ThreeMonthForecast",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFThreeMonth",
-            "dldescription": "URL to access three month forecast for the location"
-        },
-        "paddocks": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Paddocks",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFPaddock",
-            "dldescription": "URL to access list of paddocks for the location"
-        },
-        "weather": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Weather",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFWeather",
-            "dldescription": "URL to access weather data for the location"
-        },
-        "irrigation": {
-            "@id": "http://www.datalinker.org/context/PGFLocation-Irrigation",
-            "@type": "@id",
-            "type": "string",
-            "format": "uri",
-            "dltype": "http://www.datalinker.org/context/PGFIrrigation",
-            "dldescription": "URL to access irrigation details for the location"
-        }
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "@id": "[Locations](#Locations)",
+      "@type": "xsd:string",
+      "type": "string",
+      "@set": "@array",
+      "dldescription": "Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier."
+    },
+    "identifier": {
+      "@id": "[Identifier](#Identifier)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "A code used by the source system to identify the farm, such as an internally meaningful identifier"
+    },
+    "reference": {
+      "@id": "[Reference](#Reference)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "A unique name (up to 200 characters) supplied when the location was created"
+    },
+    "name": {
+      "@id": "[Name](#Name)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Location Name"
+    },
+    "geo": {
+      "@id": "[Geo](#Geo)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "The geo coordinates of the place."
+    },
+    "type": {
+      "@id": "[Type](#Type)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Currently on Farm"
+    },
+    "pastureType": {
+      "@id": "[PastureType](#PastureType)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "White clover/Ryegrass, Lucerne, Browntop, Lucerne / grass mix, Unimproved/tussock grasslands, Grass only, Summer C4 (paspalum) pastures, Irrigated pastures, C4 (Kikuyu) pastures, Clover Chicory, Plantain / clover"
+    },
+    "fertilityType": {
+      "@id": "[FertilityType](#FertilityType)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Dairy, Sheep and Beef - High, Sheep and Beef - Medium, Sheep and Beef - Low"
+    },
+    "pawType": {
+      "@id": "[PawType](#PawType)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Profile Available Water - High, ModerateHigh,Average, ModeratePoor, Poor"
+    },
+    "paw": {
+      "@id": "[Paw](#Paw)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Indicates the measure of Profile Available Water"
+    },
+    "isLearning": {
+      "@id": "[IsLearning](#IsLearning)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "This value is true when there is sufficient data for learning to be used, otherwise false. "
+    },
+    "isActive": {
+      "@id": "[IsActive](#IsActive)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "Initially true meaning active, you may set this to false with PUT if you no longer wish to use this location (takes effect from the end of the billing cycle). "
+    },
+    "isIrrigated": {
+      "@id": "[IsIrrigated](#IsIrrigated)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "This value is true when the user want to add irrigation in the location. By default, it is false."
+    },
+    "isCalirrigatedFinished": {
+      "@id": "[IsCalirrigatedFinished](#IsCalirrigatedFinished)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "True meaning finishing calculation on fly after applying irrigation. False means the calculation is still in process."
+    },
+    "dateCreated": {
+      "@id": "[DateCreated](#DateCreated)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "System maintained, this field shows the date and time the location was created (local to the server)."
+    },
+    "dateDeactivated": {
+      "@id": "[DateDeactivated](#DateDeactivated)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "System maintained, this field shows the date and time the location was deactivated (is-active set to false)."
+    },
+    "shortForecast": {
+      "@id": "[ShortForecast](#ShortForecast)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFShort](PGFShort.md)",
+      "dldescription": "URL to access short forecast for the location"
+    },
+    "yearForecast": {
+      "@id": "[YearForecast](#YearForecast)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFYear](PGFYear.md)",
+      "dldescription": "URL to access year forecast for the location"
+    },
+    "longTermForecast": {
+      "@id": "[LongTermForecast](#LongTermForecast)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFLongTerm](PGFLongTerm.md)",
+      "dldescription": "URL to access long term forecast for the location"
+    },
+    "threeMonthForecast": {
+      "@id": "[ThreeMonthForecast](#ThreeMonthForecast)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFThreeMonth](PGFThreeMonth.md)",
+      "dldescription": "URL to access three month forecast for the location"
+    },
+    "paddocks": {
+      "@id": "[Paddocks](#Paddocks)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFPaddock](PGFPaddock.md)",
+      "dldescription": "URL to access list of paddocks for the location"
+    },
+    "weather": {
+      "@id": "[Weather](#Weather)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFWeather](PGFWeather.md)",
+      "dldescription": "URL to access weather data for the location"
+    },
+    "irrigation": {
+      "@id": "[Irrigation](#Irrigation)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFIrrigation](PGFIrrigation.md)",
+      "dldescription": "URL to access irrigation details for the location"
     }
+  }
 }

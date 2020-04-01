@@ -1,1 +1,24 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"day":{"@id":"http://www.datalinker.org/contexts/2.0/PGFDay-Day","@type":"xsd:number","type":"integer","dldescription":"The day within the forecast with 0 being the publication date"},"date":{"@id":"http://www.datalinker.org/contexts/2.0/PGFDay-Date","@type":"xsd:date","type":"string","dldescription":"The date for which the forecast is"},"growth":{"@id":"http://www.datalinker.org/contexts/2.0/PGFDay-Growth","@type":"xsd:number","type":"integer","dldescription":"The expected Pasture Growth in forecastUnits"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "day": {
+      "@id": "[Day](#Day)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The day within the forecast with 0 being the publication date"
+    },
+    "date": {
+      "@id": "[Date](#Date)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "The date for which the forecast is"
+    },
+    "growth": {
+      "@id": "[Growth](#Growth)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The expected Pasture Growth in forecastUnits"
+    }
+  }
+}

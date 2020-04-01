@@ -1,1 +1,60 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"number":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-Number","@type":"xsd:number","type":"integer","dldescription":"Indicates which month the forecast is for. 1 means January, 2 means February and so on."},"mean":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-Mean","@type":"xsd:number","type":"integer","dldescription":"Mean monthly average growth rate"},"median":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-Median","@type":"xsd:number","type":"integer","dldescription":"Median monthly average growth rate"},"firstQuartile":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-FirstQuartile","@type":"xsd:number","type":"integer","dldescription":"Monthly average growth rate for the 25% quartile"},"thirdQuartile":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-ThirdQuartile","@type":"xsd:number","type":"integer","dldescription":"Monthly average growth rate for the 75% quartile"},"firstDecile":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-FirstDecile","@type":"xsd:number","type":"integer","dldescription":"Monthly average growth rate for the 10% quartile"},"ninthDecile":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-NinthDecile","@type":"xsd:number","type":"integer","dldescription":"Monthly average growth rate for the 90% quartile"},"minimum":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-Minimum","@type":"xsd:number","type":"integer","dldescription":"Minimum monthly average growth rate"},"maximum":{"@id":"http://www.datalinker.org/contexts/2.0/PGFMonth-Maximum","@type":"xsd:number","type":"integer","dldescription":"Maximum monthky average growth rate"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number": {
+      "@id": "[Number](#Number)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Indicates which month the forecast is for. 1 means January, 2 means February and so on."
+    },
+    "mean": {
+      "@id": "[Mean](#Mean)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Mean monthly average growth rate"
+    },
+    "median": {
+      "@id": "[Median](#Median)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Median monthly average growth rate"
+    },
+    "firstQuartile": {
+      "@id": "[FirstQuartile](#FirstQuartile)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Monthly average growth rate for the 25% quartile"
+    },
+    "thirdQuartile": {
+      "@id": "[ThirdQuartile](#ThirdQuartile)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Monthly average growth rate for the 75% quartile"
+    },
+    "firstDecile": {
+      "@id": "[FirstDecile](#FirstDecile)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Monthly average growth rate for the 10% quartile"
+    },
+    "ninthDecile": {
+      "@id": "[NinthDecile](#NinthDecile)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Monthly average growth rate for the 90% quartile"
+    },
+    "minimum": {
+      "@id": "[Minimum](#Minimum)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Minimum monthly average growth rate"
+    },
+    "maximum": {
+      "@id": "[Maximum](#Maximum)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Maximum monthky average growth rate"
+    }
+  }
+}

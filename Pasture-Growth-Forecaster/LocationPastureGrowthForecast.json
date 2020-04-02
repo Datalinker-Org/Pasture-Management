@@ -1,1 +1,22 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"locations":{"@id":"https://www.datalinker.org/context/PGFLocationSummary","@type":"http://www.datalinker.org/contexts/2.0/PGFLocationSummary.jsonld","type":"array","items":{"type":"object"},"@container":"@set","dldescription":"Provides the list of locations with summary information"},"organization":{"@id":"https://www.datalinker.org/context/LocationPastureGrowthForecast-Organization","@type":"@id","type":"string","format":"uri","dldescription":"Describes the Organization object as referenced in Schema.org","dltype":"https://www.datalinker.org/context/Organization"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "@id": "[PGFRegion](PGFRegion.md)",
+      "@type": "@id",
+      "type": "array",
+      "items": { "type": "object" },
+      "@container": "@set",
+      "dldescription": "Provides the list of locations with summary information"
+    },
+    "organization": {
+      "@id": "[Organization](#Organization)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dldescription": "Describes the Organization object as referenced in Schema.org",
+      "dltype": "[Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)"
+    }
+  }
+}

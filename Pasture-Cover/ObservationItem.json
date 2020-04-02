@@ -1,1 +1,26 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"key":{"@id":"http://www.datalinker.org/context/ObservationItem-ObservationItemKey","@type":"xsd:string","type":"string","dldescription":"A key to identify the type of Observation recorded, using the attributes listed under the paddock, feed, and grazing schemas."},"label":{"@id":"http://www.datalinker.org/context/ObservationItem-ObservationItemLabel","@type":"xsd:string","type":"array","items":{"type":"string"},"@container":"@set","dldescription":"A URN string to list the internal label used to identify the Observation"},"value":{"@id":"http://www.datalinker.org/context/ObservationItem-ObservationItemValue","@type":"xsd:string","type":"string","dldescription":"The value of the Observation recorded"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "key": {
+      "@id": "[ObservationItemKey](#ObservationItemKey)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "A key to identify the type of Observation recorded, using the attributes listed under the paddock, feed, and grazing schemas."
+    },
+    "label": {
+      "@id": "[ObservationItemLabel](#ObservationItemLabel)",
+      "@type": "xsd:string",
+      "type": "array",
+      "items": { "type": "string" },
+      "@container": "@set",
+      "dldescription": "A URN string to list the internal label used to identify the Observation"
+    },
+    "value": {
+      "@id": "[ObservationItemValue](#ObservationItemValue)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "The value of the Observation recorded"
+    }
+  }
+}

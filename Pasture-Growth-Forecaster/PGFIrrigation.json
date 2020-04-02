@@ -1,1 +1,24 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"month":{"@id":"http://www.datalinker.org/context/PGFIrrigation-Month","@type":"xsd:string","type":"string","dldescription":"Month of the year"},"period":{"@id":"http://www.datalinker.org/context/PGFIrrigation-Period","@type":"xsd:string","type":"string","dldescription":"Indicates the fortnight - 1 means first fortnight of the month, 2 means second fortnight of the month"},"value":{"@id":"http://www.datalinker.org/context/PGFIrrigation-Value","@type":"xsd:string","type":"string","dldescription":"Amount of irrigation applied per day in that period in mm"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "month": {
+      "@id": "[Month](#Month)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Month of the year"
+    },
+    "period": {
+      "@id": "[Period](#Period)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Indicates the fortnight - 1 means first fortnight of the month, 2 means second fortnight of the month"
+    },
+    "value": {
+      "@id": "[Value](#Value)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Amount of irrigation applied per day in that period in mm"
+    }
+  }
+}

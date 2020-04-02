@@ -1,1 +1,30 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"date":{"@id":"http://www.datalinker.org/context/PGFEvent-Date","@type":"xsd:date","type":"string","dldescription":"The date of the event"},"typeCode":{"@id":"http://www.datalinker.org/context/PGFEvent-TypeCode","@type":"xsd:string","type":"string","dldescription":"The type code for the event. Supported events are: PGRM � Monthly Growth Rate, IRRIG - Irrigation, NITR - Nitrogen, COVER � Pasture Cover"},"typeName":{"@id":"http://www.datalinker.org/context/PGFEvent-TypeName","@type":"xsd:string","type":"string","dldescription":"Monthly Growth Rate, Irrigation ( for a day), Nitrogen, Pasture Cover"},"value":{"@id":"http://www.datalinker.org/context/PGFEvent-Value","@type":"xsd:number","type":"integer","dldescription":"The value of the observed measurement"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "date": {
+      "@id": "[Date](#Date)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "The date of the event"
+    },
+    "typeCode": {
+      "@id": "[TypeCode](#TypeCode)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "The type code for the event. Supported events are: PGRM � Monthly Growth Rate, IRRIG - Irrigation, NITR - Nitrogen, COVER � Pasture Cover"
+    },
+    "typeName": {
+      "@id": "[TypeName](#TypeName)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Monthly Growth Rate, Irrigation ( for a day), Nitrogen, Pasture Cover"
+    },
+    "value": {
+      "@id": "[Value](#Value)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The value of the observed measurement"
+    }
+  }
+}

@@ -1,7 +1,6 @@
 # Pasture-Management
 
-
-Schemas for pasture cover and pasture growth forecaster.
+Pasture measurement, growth, and utilisation records.
 
 ## Schemas for [Pasture cover](Pasture-Cover/README.MD)
 

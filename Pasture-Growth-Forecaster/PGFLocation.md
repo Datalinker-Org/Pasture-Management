@@ -1,0 +1,78 @@
+ - <b id="#/properties/locations">locations</b>
+	 - **Description:** Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier.
+	 - **Type:** `string`
+ - <b id="#/properties/identifier">identifier</b>
+	 - **Description:** A code used by the source system to identify the farm, such as an internally meaningful identifier
+	 - **Type:** `string`
+ - <b id="#/properties/reference">reference</b>
+	 - **Description:** A unique name (up to 200 characters) supplied when the location was created
+	 - **Type:** `string`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Location Name
+	 - **Type:** `string`
+ - <b id="#/properties/geo">geo</b>
+	 - **Description:** The geo coordinates of the place.
+	 - **Type:** `string`
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Currently on Farm
+	 - **Type:** `string`
+ - <b id="#/properties/pastureType">pastureType</b>
+	 - **Description:** White clover/Ryegrass, Lucerne, Browntop, Lucerne / grass mix, Unimproved/tussock grasslands, Grass only, Summer C4 (paspalum) pastures, Irrigated pastures, C4 (Kikuyu) pastures, Clover Chicory, Plantain / clover
+	 - **Type:** `string`
+ - <b id="#/properties/fertilityType">fertilityType</b>
+	 - **Description:** Dairy, Sheep and Beef - High, Sheep and Beef - Medium, Sheep and Beef - Low
+	 - **Type:** `string`
+ - <b id="#/properties/pawType">pawType</b>
+	 - **Description:** Profile Available Water - High, ModerateHigh,Average, ModeratePoor, Poor
+	 - **Type:** `string`
+ - <b id="#/properties/paw">paw</b>
+	 - **Description:** Indicates the measure of Profile Available Water
+	 - **Type:** `integer`
+ - <b id="#/properties/isLearning">isLearning</b>
+	 - **Description:** This value is true when there is sufficient data for learning to be used, otherwise false. 
+	 - **Type:** `boolean`
+ - <b id="#/properties/isActive">isActive</b>
+	 - **Description:** Initially true meaning active, you may set this to false with PUT if you no longer wish to use this location (takes effect from the end of the billing cycle). 
+	 - **Type:** `boolean`
+ - <b id="#/properties/isIrrigated">isIrrigated</b>
+	 - **Description:** This value is true when the user want to add irrigation in the location. By default, it is false.
+	 - **Type:** `boolean`
+ - <b id="#/properties/isCalirrigatedFinished">isCalirrigatedFinished</b>
+	 - **Description:** True meaning finishing calculation on fly after applying irrigation. False means the calculation is still in process.
+	 - **Type:** `boolean`
+ - <b id="#/properties/dateCreated">dateCreated</b>
+	 - **Description:** System maintained, this field shows the date and time the location was created (local to the server).
+	 - **Type:** `string`
+ - <b id="#/properties/dateDeactivated">dateDeactivated</b>
+	 - **Description:** System maintained, this field shows the date and time the location was deactivated (is-active set to false).
+	 - **Type:** `string`
+ - <b id="#/properties/shortForecast">shortForecast</b>
+	 - **Description:** URL to access short forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgfshortpgfshort.md">Link to schema: [PGFShort](PGFShort.md)</b>
+ - <b id="#/properties/yearForecast">yearForecast</b>
+	 - **Description:** URL to access year forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgfyearpgfyear.md">Link to schema: [PGFYear](PGFYear.md)</b>
+ - <b id="#/properties/longTermForecast">longTermForecast</b>
+	 - **Description:** URL to access long term forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgflongtermpgflongterm.md">Link to schema: [PGFLongTerm](PGFLongTerm.md)</b>
+ - <b id="#/properties/threeMonthForecast">threeMonthForecast</b>
+	 - **Description:** URL to access three month forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgfthreemonthpgfthreemonth.md">Link to schema: [PGFThreeMonth](PGFThreeMonth.md)</b>
+ - <b id="#/properties/paddocks">paddocks</b>
+	 - **Description:** URL to access list of paddocks for the location
+	 - **Type:** `string`
+	 - <b id="pgfpaddockpgfpaddock.md">Link to schema: [PGFPaddock](PGFPaddock.md)</b>
+ - <b id="#/properties/weather">weather</b>
+	 - **Description:** URL to access weather data for the location
+	 - **Type:** `string`
+	 - <b id="pgfweatherpgfweather.md">Link to schema: [PGFWeather](PGFWeather.md)</b>
+ - <b id="#/properties/irrigation">irrigation</b>
+	 - **Description:** URL to access irrigation details for the location
+	 - **Type:** `string`
+	 - <b id="pgfirrigationpgfirrigation.md">Link to schema: [PGFIrrigation](PGFIrrigation.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

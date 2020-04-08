@@ -1,0 +1,23 @@
+ - <b id="#/properties/blockId">blockId</b>
+	 - **Description:** Identifier for the block being assessed.Usually recorded as a block number or code used by the farm
+	 - **Type:** `string`
+ - <b id="#/properties/blockType">blockType</b>
+	 - **Description:** It can be a Field or Paddock. Refer to Plot Type in [Farm Features and Attributes standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Farm%20Features%20and%20Attributes/README.md).
+	 - **Type:** `string`
+ - <b id="#/properties/blockName">blockName</b>
+	 - **Description:** The name used to refer to the block within the farm.
+	 - **Type:** `string`
+ - <b id="#/properties/blockTotalArea">blockTotalArea</b>
+	 - **Description:** Total block area in m2
+	 - **Type:** `number`
+ - <b id="#/properties/identifiers">identifiers</b>
+	 - **Description:** Identifier for the paddock being assessed.Usually recorded as the paddock number on farm
+	 - **Type:** `array`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** The name used to refer to the paddock within the farm.
+	 - **Type:** `string`
+ - <b id="#/properties/totalArea">totalArea</b>
+	 - **Description:** Total paddock area in m2
+	 - **Type:** `number`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

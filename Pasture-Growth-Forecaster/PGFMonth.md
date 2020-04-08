@@ -1,0 +1,29 @@
+ - <b id="#/properties/number">number</b>
+	 - **Description:** Indicates which month the forecast is for. 1 means January, 2 means February and so on.
+	 - **Type:** `integer`
+ - <b id="#/properties/mean">mean</b>
+	 - **Description:** Mean monthly average growth rate
+	 - **Type:** `integer`
+ - <b id="#/properties/median">median</b>
+	 - **Description:** Median monthly average growth rate
+	 - **Type:** `integer`
+ - <b id="#/properties/firstQuartile">firstQuartile</b>
+	 - **Description:** Monthly average growth rate for the 25% quartile
+	 - **Type:** `integer`
+ - <b id="#/properties/thirdQuartile">thirdQuartile</b>
+	 - **Description:** Monthly average growth rate for the 75% quartile
+	 - **Type:** `integer`
+ - <b id="#/properties/firstDecile">firstDecile</b>
+	 - **Description:** Monthly average growth rate for the 10% quartile
+	 - **Type:** `integer`
+ - <b id="#/properties/ninthDecile">ninthDecile</b>
+	 - **Description:** Monthly average growth rate for the 90% quartile
+	 - **Type:** `integer`
+ - <b id="#/properties/minimum">minimum</b>
+	 - **Description:** Minimum monthly average growth rate
+	 - **Type:** `integer`
+ - <b id="#/properties/maximum">maximum</b>
+	 - **Description:** Maximum monthky average growth rate
+	 - **Type:** `integer`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

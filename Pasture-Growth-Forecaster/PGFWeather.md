@@ -1,0 +1,29 @@
+ - <b id="#/properties/date">date</b>
+	 - **Description:** A date in the format YYYY-MM-DD specifying the date on which the weather was imported.
+	 - **Type:** `string`
+ - <b id="#/properties/maxAirTemperature">maxAirTemperature</b>
+	 - **Description:** Maximum temperature in degC from 9am local day 
+	 - **Type:** `integer`
+ - <b id="#/properties/minAirTemperature">minAirTemperature</b>
+	 - **Description:** Minimum temperature in DegC to 9am local day
+	 - **Type:** `integer`
+ - <b id="#/properties/rainfall">rainfall</b>
+	 - **Description:**  Total amount of rain in mm from 9am local day 
+	 - **Type:** `integer`
+ - <b id="#/properties/relativeHumidity">relativeHumidity</b>
+	 - **Description:** Relative humidity in percent at 9am local day (%) 
+	 - **Type:** `integer`
+ - <b id="#/properties/windSpeed">windSpeed</b>
+	 - **Description:** Mean wind speed in m/s at 10m above ground level over 24 hours from midnight local day
+	 - **Type:** `integer`
+ - <b id="#/properties/solarRadiation">solarRadiation</b>
+	 - **Description:** Amount of accumulated global solar radiation in MJ/m2 (Mega Joules per square metre) from midnight local day 
+	 - **Type:** `integer`
+ - <b id="#/properties/barometricPressure">barometricPressure</b>
+	 - **Description:** Vapour pressure in hPa at 9am local day in hPa 
+	 - **Type:** `integer`
+ - <b id="#/properties/potentialEvapotranspiration">potentialEvapotranspiration</b>
+	 - **Description:** 24 hour Penman Potential Evapotranspiration total in mm from 9am local day. (mm /day) 
+	 - **Type:** `integer`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

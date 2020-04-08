@@ -1,0 +1,33 @@
+ - <b id="#/properties/identifier">identifier</b>
+	 - **Description:** Identifier for the paddock being assessed, usually recorded as the paddock number on farm.
+	 - **Type:** `string`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Paddock Name
+	 - **Type:** `string`
+ - <b id="#/properties/isIrrigated">isIrrigated</b>
+	 - **Description:** This value is true when the user want to add irrigation in the paddock. By default, it is false.
+	 - **Type:** `boolean`
+ - <b id="#/properties/pastureType">pastureType</b>
+	 - **Description:** White clover/Ryegrass
+	 - **Type:** `string`
+ - <b id="#/properties/shortForecast">shortForecast</b>
+	 - **Description:** URL to access short forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgfshortpgfshort.md">Link to schema: [PGFShort](PGFShort.md)</b>
+ - <b id="#/properties/longTermForecast">longTermForecast</b>
+	 - **Description:** URL to access long term forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgflongtermpgflongterm.md">Link to schema: [PGFLongTerm](PGFLongTerm.md)</b>
+ - <b id="#/properties/threeMonthForecast">threeMonthForecast</b>
+	 - **Description:** URL to access three month forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgfthreemonthpgfthreemonth.md">Link to schema: [PGFThreeMonth](PGFThreeMonth.md)</b>
+ - <b id="#/properties/dynamicPeriodForecast">dynamicPeriodForecast</b>
+	 - **Description:** URL to access the dynamic period forecast for the location
+	 - **Type:** `string`
+ - <b id="#/properties/events">events</b>
+	 - **Description:** URL for list of events for the paddock
+	 - **Type:** `string`
+	 - <b id="pgfeventpgfevent.md">Link to schema: [PGFEvent](PGFEvent.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

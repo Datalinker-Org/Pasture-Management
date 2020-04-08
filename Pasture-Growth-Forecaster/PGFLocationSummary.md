@@ -1,0 +1,29 @@
+ - <b id="#/properties/reference">reference</b>
+	 - **Description:** A unique name (up to 200 characters) supplied when the location was created
+	 - **Type:** `string`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Location Name
+	 - **Type:** `string`
+ - <b id="#/properties/geo">geo</b>
+	 - **Description:** Geographical co-ordinates of the place
+	 - **Type:** `string`
+ - <b id="#/properties/fertilityType">fertilityType</b>
+	 - **Description:** Dairy, Sheep and Beef - High, Sheep and Beef - Medium, Sheep and Beef - Low
+	 - **Type:** `string`
+ - <b id="#/properties/pawType">pawType</b>
+	 - **Description:** Profile Available Water - High, ModerateHigh,Average, ModeratePoor, Poor
+	 - **Type:** `string`
+ - <b id="#/properties/shortForecast">shortForecast</b>
+	 - **Description:** URL to access short forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgfshortpgfshort.md">Link to schema: [PGFShort](PGFShort.md)</b>
+ - <b id="#/properties/longForecast">longForecast</b>
+	 - **Description:** URL to access long term forecast for the location
+	 - **Type:** `string`
+	 - <b id="pgflongtermpgflongterm.md">Link to schema: [PGFLongTerm](PGFLongTerm.md)</b>
+ - <b id="#/properties/locationDetails">locationDetails</b>
+	 - **Description:** URL to access detailed location forecast
+	 - **Type:** `string`
+	 - <b id="pgflocationpgflocation.md">Link to schema: [PGFLocation](PGFLocation.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

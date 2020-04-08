@@ -1,0 +1,25 @@
+ - <b id="#/properties/locations">locations</b>
+	 - **Description:** Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace. Used as an externally meaningful identifier. e.g. urn:nzl:pri:location:FOL_ID:CL-9587-0176
+	 - **Type:** `array`
+ - <b id="#/properties/identifiers">identifiers</b>
+	 - **Description:** A code used by the source system to identify the farm, such as an internally meaningful identifier
+	 - **Type:** `array`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Farm name. e.g. Smith Farms Ltd
+	 - **Type:** `string`
+ - <b id="#/properties/validFrom">validFrom</b>
+	 - **Description:** Location start date. This is an optional field
+	 - **Type:** `string`
+ - <b id="#/properties/validThrough">validThrough</b>
+	 - **Description:** Location end date. This is an optional field
+	 - **Type:** `string`
+ - <b id="#/properties/paddocks">paddocks</b>
+	 - **Description:** Url to get Paddocks for the farm
+	 - **Type:** `string`
+	 - <b id="pasturecoverspaddockpasturecoverspaddock.md">Link to schema: [PastureCoversPaddock](PastureCoversPaddock.md)</b>
+ - <b id="#/properties/sessions">sessions</b>
+	 - **Description:** Url to get sessions for the farm
+	 - **Type:** `string`
+	 - <b id="pasturecoverssessionpasturecoverssession.md">Link to schema: [PastureCoversSession](PastureCoversSession.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

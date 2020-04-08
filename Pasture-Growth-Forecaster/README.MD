@@ -15,8 +15,9 @@ Property descriptions | JSON Schema
 [PGFShort.md](PGFShort.md)|[PGFShort.json](PGFShort.json)
 [PGFThreeMonth.md](PGFThreeMonth.md)|[PGFThreeMonth.json](PGFThreeMonth.json)
 [PGFWeather.md](PGFWeather.md)|[PGFWeather.json](PGFWeather.json)
-[PGFYear.json](PGFYear.json)|[PGFYear.md](PGFYear.md)
-[PGFYearData.json](PGFYearData.json)|[PGFYearData.md](PGFYearData.md)
-[RegionalPastureGrowthForecast.json](RegionalPastureGrowthForecast.json)|[RegionalPastureGrowthForecast.md](RegionalPastureGrowthForecast.md)
+[PGFYear.md](PGFYear.md)|[PGFYear.json](PGFYear.json)
+[PGFYearData.md](PGFYearData.md)|[PGFYearData.json](PGFYearData.json)
+[RegionalPastureGrowthForecast.md](RegionalPastureGrowthForecast.md)|[RegionalPastureGrowthForecast.json](RegionalPastureGrowthForecast.json)
+
 
 

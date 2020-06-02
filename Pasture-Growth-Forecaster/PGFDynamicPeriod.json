@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "publicationDate": {
+            "@id": "[PublicationDate](#PublicationDate)",
+            "@type": "xsd:date",
+            "type": "string",
+            "dldescription": "Date on which the forecast was generated"
+        },
+        "forecastUnits": {
+            "@id": "[ForecastUnits](#ForecastUnits)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Unit of measurement of pasture growth. Currently only kg DM/ha."
+        },
+        "accumulatedUnits": {
+            "@id": "[AccumulatedUnits](#AccumulatedUnits)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Unit of measurement of accumulated cover. Currently only kg DM/ha."
+        },
+        "forecastDay": {
+            "@id": "[PGFDynamicPeriodFrcstDay](PGFDynamicPeriodFrcstDay.md)",
+            "@type": "@id",
+            "type": "array",
+            "items": {
+                "type": "object"
+            },
+            "@container": "@set",
+            "dldescription": "Provides forecast for a set of days"
+        },
+        "error": {
+            "@id": "[Error](#Error)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Error message."
+        },
+        "warning": {
+            "@id": "[Warning](#Warning)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Warning message."
+        },
+        "locationId": {
+            "@id": "[LocationId](#LocationId)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Location Id."
+        },
+        "paddockId": {
+            "@id": "[PaddockId](#PaddockId)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Paddock Id."
+        }
+    }
+}

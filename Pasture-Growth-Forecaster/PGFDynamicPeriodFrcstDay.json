@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "day": {
+      "@id": "[Day](#Day)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The day within the forecast with 0 being the publication date"
+    },
+    "date": {
+      "@id": "[Date](#Date)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "The date for which the forecast is"
+    },
+    "growth": {
+      "@id": "[Growth](#Growth)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The expected Pasture Growth in forecastUnits"
+    },
+    "accumulatedPastureCover": {
+      "@id": "[AccumulatedPastureCover](#AccumulatedPastureCover)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The accumulated pasture cover in accumulatedUnits"
+    }
+  }
+}

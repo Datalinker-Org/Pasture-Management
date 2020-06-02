@@ -154,6 +154,30 @@
       "format": "uri",
       "dltype": "[PGFIrrigation](PGFIrrigation.md)",
       "dldescription": "URL to access irrigation details for the location"
+    },
+    "paddocks-all-short-forecasts": {
+      "@id": "[paddocks-all-short-forecasts](#paddocks-all-short-forecasts)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFAllShort](PGFAllSort.md)",
+      "dldescription": "URL for list of short forecasts for all paddocks in the location"
+    },
+    "paddocks-all-dynamic-period": {
+      "@id": "[paddocks-all-dynamic-period](#paddocks-all-dynamic-period)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFDynamicPeriod](PGFDynamicPeriod.md)",
+      "dldescription": "URL for list of dynamic period forecasts for all paddocks in the location"
+    },
+    "events": {
+      "@id": "[Events](#Events)",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dltype": "[PGFLocationEvents](PGFLocationEvents.md)",
+      "dldescription": "Bulk upload of events for paddocks in a location"
     }
   }
 }

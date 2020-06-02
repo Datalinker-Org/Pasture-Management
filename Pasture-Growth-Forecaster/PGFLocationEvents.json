@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "paddockId": {
+            "@id": "[PaddockId](#PaddockId)",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Paddock Id."
+        },
+        "events": {
+            "@id": "[Events](#Events)",
+            "@type": "@id",
+            "type": "string",
+            "format": "uri",
+            "dltype": "[PGFLocationEvent](PGFLocationEvent.md)",
+            "dldescription": "Bulk upload of events for paddock"
+        }
+    }
+}

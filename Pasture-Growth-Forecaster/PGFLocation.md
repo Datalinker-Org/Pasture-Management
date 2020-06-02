@@ -74,5 +74,17 @@
 	 - **Description:** URL to access irrigation details for the location
 	 - **Type:** `string`
 	 - <b id="pgfirrigationpgfirrigation.md">Link to schema: [PGFIrrigation](PGFIrrigation.md)</b>
+ - <b id="#/properties/paddocks-all-short-forecasts">paddocks-all-short-forecasts</b>
+	 - **Description:** URL for list of short forecasts for all paddocks in the location
+	 - **Type:** `string`
+	 - <b id="pgfallshortpgfallsort.md">Link to schema: [PGFAllShort](PGFAllSort.md)</b>
+ - <b id="#/properties/paddocks-all-dynamic-period">paddocks-all-dynamic-period</b>
+	 - **Description:** URL for list of dynamic period forecasts for all paddocks in the location
+	 - **Type:** `string`
+	 - <b id="pgfdynamicperiodpgfdynamicperiod.md">Link to schema: [PGFDynamicPeriod](PGFDynamicPeriod.md)</b>
+ - <b id="#/properties/events">events</b>
+	 - **Description:** Bulk upload of events for paddocks in a location
+	 - **Type:** `string`
+	 - <b id="pgflocationeventspgflocationevents.md">Link to schema: [PGFLocationEvents](PGFLocationEvents.md)</b>
 
 _Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

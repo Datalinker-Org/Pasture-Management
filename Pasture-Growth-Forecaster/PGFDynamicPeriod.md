@@ -1,0 +1,27 @@
+ - <b id="#/properties/publicationDate">publicationDate</b>
+	 - **Description:** Date on which the forecast was generated
+	 - **Type:** `string`
+ - <b id="#/properties/forecastUnits">forecastUnits</b>
+	 - **Description:** Unit of measurement of pasture growth. Currently only kg DM/ha.
+	 - **Type:** `string`
+ - <b id="#/properties/accumulatedUnits">accumulatedUnits</b>
+	 - **Description:** Unit of measurement of accumulated cover. Currently only kg DM/ha.
+	 - **Type:** `string`
+ - <b id="#/properties/forecastDay">forecastDay</b>
+	 - **Description:** Provides forecast for a set of days
+	 - **Type:** `array`
+	 - <b id="pgfdynamicperiodfrcstdaypgfdynamicperiodfrcstday.md">Link to schema: [PGFDynamicPeriodFrcstDay](PGFDynamicPeriodFrcstDay.md)</b>
+ - <b id="#/properties/error">error</b>
+	 - **Description:** Error message.
+	 - **Type:** `string`
+ - <b id="#/properties/warning">warning</b>
+	 - **Description:** Warning message.
+	 - **Type:** `string`
+ - <b id="#/properties/locationId">locationId</b>
+	 - **Description:** Location Id.
+	 - **Type:** `string`
+ - <b id="#/properties/paddockId">paddockId</b>
+	 - **Description:** Paddock Id.
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_
